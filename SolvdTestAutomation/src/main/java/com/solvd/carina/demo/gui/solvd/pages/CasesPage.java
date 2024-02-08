@@ -27,4 +27,16 @@ public class CasesPage extends AbstractPage {
     public void clickGoToPageTwoButton () {
         goToPageTwoButton.click();
     }
+
+    public void clickGoToPageThreeButton () {
+        goToPageThreeButton.click();
+    }
+
+    public void clickGoToPageFourButton () {
+        goToPageFourButton.click();
+    }
+
+    public void clickGoToNextPageButton () {
+        goToNextPageButton.click();
+    }
 }

@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 public class WebSolvdTest implements IAbstractTest {
 
     @Test
-    public void headerButtonsTest(){
+    public void CasesPageTest(){
         HomePage homePage = new HomePage(getDriver());
         CasesPage casesPage = new CasesPage(getDriver());
         HeaderNavigatorBar headerNavigatorBar = homePage.getHeaderNavigatorBar();
@@ -20,16 +20,17 @@ public class WebSolvdTest implements IAbstractTest {
 
         headerNavigatorBar.clickCasesButton();
         casesPage.clickGoToPageTwoButton();
-
     }
 
     @Test(dataProvider = "ContactUsData")
-    public void contactUsTest(String fullName, String email, String phone, String message) {
+    public void contactUsPageTest(String fullName, String email, String phone, String message) {
         HomePage homePage = new HomePage(getDriver());
         ContactUsPage contactUsPage = new ContactUsPage(getDriver());
+        HeaderNavigatorBar headerNavigatorBar = homePage.getHeaderNavigatorBar();
 
         homePage.open();
-        homePage.clickContactUsButton();
+
+        headerNavigatorBar.clickContactUsButton();
 
         contactUsPage.clickGetInTouchWithUsButton();
         contactUsPage.typeFullName(fullName);
@@ -43,11 +44,20 @@ public class WebSolvdTest implements IAbstractTest {
     }
 
     @DataProvider(name = "ContactUsData")
-    public Object[][] dataProvider() {
+    public Object[][] contactUsDataProvider() {
         return new Object[][] {
                 {"Manu", "manu@gmail.com", "114121431", "I want to talk to Ivan"},
                 {"Ivan", "ivan@gmail.com", "413987874", "I want to talk to Manu"},
                 {"Carlos", "carlos@gmail.com", "513213456", "I want to help solve"}
+        };
+    }
+
+    @DataProvider(name = "searchBlogData")
+    public Object[][] searchBlogDataProvider() {
+        return new Object[][] {
+                {"QA"},
+                {"Test Automation"},
+                {"Mobile"}
         };
     }
 }

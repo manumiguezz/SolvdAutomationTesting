@@ -1,0 +1,26 @@
+[2024-02-08 08:15:31] [1] [INFO] 
+============= Basic configuration =============
+env=DEMO
+=========== Encryptor configuration ===========
+crypto_key_value=*****
+=========== WebDriver configuration ===========
+url=https://www.solvd.com/
+selenium_url=http://localhost:4444/wd/hub
+auto_screenshot=true
+localization_encoding=UTF-8
+language=en_US
+-------------- Driver capabilities ------------
+browserName=chrome
+===============================================
+
+[2024-02-08 08:15:32] [1] [WARN] Reporting disabled: using no op test run registrar
+[2024-02-08 08:15:36] [1] [INFO] [TestNG] Running:
+  C:\Users\manue\AppData\Local\JetBrains\IdeaIC2023.1\temp-testng-customsuite.xml
+
+[2024-02-08 08:15:36] [1] [INFO] Set thread-count=1
+[2024-02-08 08:15:36] [1] [INFO] Set data-provider-thread-count=1
+[2024-02-08 08:15:36] [1] [INFO] CARINA_CORE_VERSION: 1.1.3
+[2024-02-08 08:16:05] [1] [INFO] INFO: '**************** Test execution summary ****************'.
+[2024-02-08 08:16:05] [1] [INFO] RESULT #1: TEST [SolvdTestProject - contactUsPageTest [L01]] PASS [screenshots=file://F:\Coding\JavaProjects\Solvd\SolvdTestProject\SolvdTestAutomation\.\reports\1707380131986/795deb5e-e49c-458c-96e5-ff44d8043d3b/report.html | log=file://F:\Coding\JavaProjects\Solvd\SolvdTestProject\SolvdTestAutomation\.\reports\1707380131986/795deb5e-e49c-458c-96e5-ff44d8043d3b/test.log]
+[2024-02-08 08:16:05] [1] [INFO] RESULT #2: TEST [SolvdTestProject - contactUsPageTest [L02]] PASS [screenshots=file://F:\Coding\JavaProjects\Solvd\SolvdTestProject\SolvdTestAutomation\.\reports\1707380131986/2afa27ce-bb42-4e40-b594-f50e0ddd4d44/report.html | log=file://F:\Coding\JavaProjects\Solvd\SolvdTestProject\SolvdTestAutomation\.\reports\1707380131986/2afa27ce-bb42-4e40-b594-f50e0ddd4d44/test.log]
+[2024-02-08 08:16:05] [1] [INFO] RESULT #3: TEST [SolvdTestProject - contactUsPageTest [L03]] PASS [screenshots=file://F:\Coding\JavaProjects\Solvd\SolvdTestProject\SolvdTestAutomation\.\reports\1707380131986/3d4535ae-3bc3-4c2c-b26c-01b4e77908f9/report.html | log=file://F:\Coding\JavaProjects\Solvd\SolvdTestProject\SolvdTestAutomation\.\reports\1707380131986/3d4535ae-3bc3-4c2c-b26c-01b4e77908f9/test.log]

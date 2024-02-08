@@ -1,5 +1,8 @@
 package com.solvd.carina.demo.gui.solvd.components;
 
+import com.solvd.carina.demo.gui.solvd.pages.BlogPage;
+import com.solvd.carina.demo.gui.solvd.pages.CasesPage;
+import com.solvd.carina.demo.gui.solvd.pages.ContactUsPage;
 import com.zebrunner.carina.webdriver.decorator.ExtendedWebElement;
 import com.zebrunner.carina.webdriver.gui.AbstractUIObject;
 import org.openqa.selenium.SearchContext;
@@ -17,17 +20,34 @@ public class HeaderNavigatorBar extends AbstractUIObject {
     @FindBy(xpath = "//span[@class='MuiTypography-root MuiTypography-body3 mui-4v521x' and text()='Cases']")
     private ExtendedWebElement casesButton;
 
+    @FindBy(xpath = "//span[@class='MuiTypography-root MuiTypography-body3 mui-4v521x' and text()='Company']")
     private ExtendedWebElement companyButton;
 
+    @FindBy(xpath = "//span[@class='MuiTypography-root MuiTypography-body3 mui-4v521x' and text()='Innovations']")
     private ExtendedWebElement innovationsButton;
 
+    @FindBy(xpath = "//span[@class='MuiTypography-root MuiTypography-body3 mui-4v521x' and text()='Blog']")
     private ExtendedWebElement blogButton;
+
+    @FindBy(xpath = "//*[@aria-label='Open contact us form']")
+    private ExtendedWebElement contactUsButton;
 
     public HeaderNavigatorBar(WebDriver driver, SearchContext searchContext) {
         super(driver, searchContext);
     }
 
-    public void clickCasesButton () {
+    public CasesPage clickCasesButton () {
         casesButton.click();
+        return new CasesPage(getDriver());
+    }
+
+    public BlogPage clickBlogButton () {
+        blogButton.click();
+        return new BlogPage(getDriver());
+    }
+
+    public ContactUsPage clickContactUsButton () {
+        contactUsButton.click();
+        return new ContactUsPage(getDriver());
     }
 }
