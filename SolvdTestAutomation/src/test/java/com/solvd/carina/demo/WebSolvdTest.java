@@ -10,5 +10,7 @@ public class WebSolvdTest implements IAbstractTest {
     public void contactUsTest() {
         HomePage homePage = new HomePage(getDriver());
         homePage.open();
+
+        homePage.clickContactUsButton();
     }
 }
