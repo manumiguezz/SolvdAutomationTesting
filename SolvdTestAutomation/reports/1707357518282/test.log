@@ -1,0 +1,22 @@
+[2024-02-08 01:58:38] [1] [INFO] 
+============= Basic configuration =============
+env=DEMO
+=========== Encryptor configuration ===========
+crypto_key_value=*****
+=========== WebDriver configuration ===========
+url=https://www.gsmarena.com
+auto_screenshot=true
+localization_encoding=UTF-8
+language=en_US
+-------------- Driver capabilities ------------
+===============================================
+
+[2024-02-08 01:58:38] [1] [WARN] Reporting disabled: using no op test run registrar
+[2024-02-08 01:58:42] [1] [INFO] [TestNG] Running:
+  C:\Users\manue\AppData\Local\JetBrains\IdeaIC2023.1\temp-testng-customsuite.xml
+
+[2024-02-08 01:58:42] [1] [INFO] Set thread-count=1
+[2024-02-08 01:58:42] [1] [INFO] Set data-provider-thread-count=1
+[2024-02-08 01:58:42] [1] [INFO] CARINA_CORE_VERSION: 1.1.3
+[2024-02-08 01:58:46] [1] [INFO] INFO: '**************** Test execution summary ****************'.
+[2024-02-08 01:58:46] [1] [INFO] RESULT #1: TEST [SolvdTestProject - putProductTest] FAIL [log=file://F:\Coding\JavaProjects\Solvd\SolvdTestProject\SolvdTestAutomation\.\reports\1707357518282/64dbd967-af0d-46bd-818c-161cb6a9c9df/test.log]
