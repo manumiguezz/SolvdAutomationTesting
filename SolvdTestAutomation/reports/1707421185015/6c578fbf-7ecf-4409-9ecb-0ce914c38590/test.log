@@ -1,0 +1,9 @@
+[2024-02-08 07:39:49] [1] [WARN] Reporting disabled: using no op test run registrar
+[2024-02-08 07:39:49] [1] [INFO] TEST [SolvdTestProject - BlogPageTest [L01]] STARTED at [16:39:49 2024-02-08]
+[2024-02-08 07:39:49] [1] [INFO] Starting driver session...
+[2024-02-08 07:39:51] [1] [INFO] Driver session started.
+[2024-02-08 07:39:51] [1] [INFO] INFO: opening url 'https://www.solvd.com/'
+[2024-02-08 07:39:55] [1] [INFO] PASS: element 'blogButton' is clicked.
+[2024-02-08 07:39:57] [1] [INFO] PASS: keys 'QA' are sent to element 'searchInputField'.
+[2024-02-08 07:39:57] [1] [INFO] PASS: element 'clearInputFieldButton' is clicked.
+[2024-02-08 07:39:57] [1] [INFO] TEST [SolvdTestProject - BlogPageTest [L01]] PASSED at [16:39:57 2024-02-08]

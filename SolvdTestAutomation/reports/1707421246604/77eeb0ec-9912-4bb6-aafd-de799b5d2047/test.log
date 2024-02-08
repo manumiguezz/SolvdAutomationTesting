@@ -1,0 +1,8 @@
+[2024-02-08 07:41:00] [1] [INFO] TEST [SolvdTestProject - BlogPageTest [L02]] STARTED at [16:41:00 2024-02-08]
+[2024-02-08 07:41:00] [1] [INFO] Starting driver session...
+[2024-02-08 07:41:01] [1] [INFO] Driver session started.
+[2024-02-08 07:41:01] [1] [INFO] INFO: opening url 'https://www.solvd.com/'
+[2024-02-08 07:41:05] [1] [INFO] PASS: element 'blogButton' is clicked.
+[2024-02-08 07:41:07] [1] [INFO] PASS: keys 'Test Automation' are sent to element 'searchInputField'.
+[2024-02-08 07:41:08] [1] [INFO] PASS: element 'clearInputFieldButton' is clicked.
+[2024-02-08 07:41:08] [1] [INFO] TEST [SolvdTestProject - BlogPageTest [L02]] PASSED at [16:41:08 2024-02-08]

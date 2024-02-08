@@ -1,0 +1,12 @@
+[2024-02-08 07:24:13] [1] [INFO] TEST [SolvdTestProject - contactUsPageTest [L03]] STARTED at [16:24:13 2024-02-08]
+[2024-02-08 07:24:13] [1] [INFO] Starting driver session...
+[2024-02-08 07:24:14] [1] [INFO] Driver session started.
+[2024-02-08 07:24:14] [1] [INFO] INFO: opening url 'https://www.solvd.com/'
+[2024-02-08 07:24:17] [1] [INFO] PASS: element 'contactUsButton' is clicked.
+[2024-02-08 07:24:17] [1] [INFO] PASS: element 'getInTouchWithUsButton' is clicked.
+[2024-02-08 07:24:18] [1] [INFO] PASS: keys 'Carlos' are sent to element 'fullNameInputField'.
+[2024-02-08 07:24:19] [1] [INFO] PASS: keys 'carlos@gmail.com' are sent to element 'emailInputField'.
+[2024-02-08 07:24:19] [1] [INFO] PASS: keys '513213456' are sent to element 'phoneInputField'.
+[2024-02-08 07:24:20] [1] [INFO] PASS: keys 'I want to help solve' are sent to element 'messageInputField'.
+[2024-02-08 07:24:20] [1] [INFO] PASS: element 'privacyPolicyCheckBox' is clicked.
+[2024-02-08 07:24:21] [1] [INFO] TEST [SolvdTestProject - contactUsPageTest [L03]] PASSED at [16:24:21 2024-02-08]

@@ -1,0 +1,8 @@
+[2024-02-08 07:41:08] [1] [INFO] TEST [SolvdTestProject - BlogPageTest [L03]] STARTED at [16:41:08 2024-02-08]
+[2024-02-08 07:41:08] [1] [INFO] Starting driver session...
+[2024-02-08 07:41:09] [1] [INFO] Driver session started.
+[2024-02-08 07:41:10] [1] [INFO] INFO: opening url 'https://www.solvd.com/'
+[2024-02-08 07:41:12] [1] [INFO] PASS: element 'blogButton' is clicked.
+[2024-02-08 07:41:15] [1] [INFO] PASS: keys 'Mobile' are sent to element 'searchInputField'.
+[2024-02-08 07:41:15] [1] [INFO] PASS: element 'clearInputFieldButton' is clicked.
+[2024-02-08 07:41:16] [1] [INFO] TEST [SolvdTestProject - BlogPageTest [L03]] PASSED at [16:41:16 2024-02-08]

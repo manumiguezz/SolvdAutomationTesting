@@ -1,0 +1,5 @@
+[2024-02-08 07:37:29] [1] [INFO] TEST [SolvdTestProject - BlogPageTest [L02]] STARTED at [16:37:29 2024-02-08]
+[2024-02-08 07:37:29] [1] [INFO] Starting driver session...
+[2024-02-08 07:37:30] [1] [INFO] Driver session started.
+[2024-02-08 07:37:30] [1] [INFO] INFO: opening url 'https://www.solvd.com/'
+[2024-02-08 07:37:33] [1] [INFO] PASS: element 'blogButton' is clicked.

@@ -28,6 +28,12 @@ public class ContactUsPage extends AbstractPage {
     @FindBy(xpath = "//*[@aria-label='Submit the form']")
     private ExtendedWebElement sendFormButton;
 
+    @FindBy(xpath = "//*[@id=':R3rklffamuila:-helper-text']/span/span")
+    private ExtendedWebElement incorrectEmailCredentials;
+
+    @FindBy(xpath = "/html/body/main/div/div[2]/section/form/div[3]/p")
+    private ExtendedWebElement incorrectPhoneCredentials;
+
     public ContactUsPage(WebDriver driver) {
         super(driver);
     }
@@ -58,6 +64,14 @@ public class ContactUsPage extends AbstractPage {
 
     public void clickSendFormButton () {
         sendFormButton.click();
+    }
+
+    public boolean isIncorrectEmailCredentialsPresent () {
+        return incorrectEmailCredentials.isPresent();
+    }
+
+    public boolean isIncorrectPhoneCredentialsPresent () {
+        return incorrectPhoneCredentials.isPresent();
     }
 
 
