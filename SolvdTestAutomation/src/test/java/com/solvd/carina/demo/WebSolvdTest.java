@@ -1,5 +1,7 @@
 package com.solvd.carina.demo;
 
+import com.solvd.carina.demo.gui.solvd.components.HeaderNavigatorBar;
+import com.solvd.carina.demo.gui.solvd.pages.CasesPage;
 import com.solvd.carina.demo.gui.solvd.pages.ContactUsPage;
 import com.solvd.carina.demo.gui.solvd.pages.HomePage;
 import com.zebrunner.carina.core.IAbstractTest;
@@ -7,6 +9,19 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class WebSolvdTest implements IAbstractTest {
+
+    @Test
+    public void headerButtonsTest(){
+        HomePage homePage = new HomePage(getDriver());
+        CasesPage casesPage = new CasesPage(getDriver());
+        HeaderNavigatorBar headerNavigatorBar = homePage.getHeaderNavigatorBar();
+
+        homePage.open();
+
+        headerNavigatorBar.clickCasesButton();
+        casesPage.clickGoToPageTwoButton();
+
+    }
 
     @Test(dataProvider = "ContactUsData")
     public void contactUsTest(String fullName, String email, String phone, String message) {

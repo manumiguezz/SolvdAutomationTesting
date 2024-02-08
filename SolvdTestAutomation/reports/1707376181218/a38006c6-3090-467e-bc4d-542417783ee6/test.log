@@ -1,0 +1,13 @@
+[2024-02-08 07:09:45] [1] [WARN] Reporting disabled: using no op test run registrar
+[2024-02-08 07:09:45] [1] [INFO] TEST [SolvdTestProject - contactUsTest [L01]] STARTED at [04:09:45 2024-02-08]
+[2024-02-08 07:09:45] [1] [INFO] Starting driver session...
+[2024-02-08 07:09:47] [1] [INFO] Driver session started.
+[2024-02-08 07:09:47] [1] [INFO] INFO: opening url 'https://www.solvd.com/'
+[2024-02-08 07:09:50] [1] [INFO] PASS: element 'contactUsHomeButton' is clicked.
+[2024-02-08 07:09:51] [1] [INFO] PASS: element 'getInTouchWithUsButton' is clicked.
+[2024-02-08 07:09:52] [1] [INFO] PASS: keys 'Manu' are sent to element 'fullNameInputField'.
+[2024-02-08 07:09:52] [1] [INFO] PASS: keys 'manu@gmail.com' are sent to element 'emailInputField'.
+[2024-02-08 07:09:53] [1] [INFO] PASS: keys '114121431' are sent to element 'phoneInputField'.
+[2024-02-08 07:09:53] [1] [INFO] PASS: keys 'I want to talk to Ivan' are sent to element 'messageInputField'.
+[2024-02-08 07:09:54] [1] [INFO] PASS: element 'privacyPolicyCheckBox' is clicked.
+[2024-02-08 07:09:54] [1] [INFO] TEST [SolvdTestProject - contactUsTest [L01]] PASSED at [04:09:54 2024-02-08]

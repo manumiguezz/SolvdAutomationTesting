@@ -1,0 +1,8 @@
+[2024-02-08 08:03:54] [1] [WARN] Reporting disabled: using no op test run registrar
+[2024-02-08 08:03:54] [1] [INFO] TEST [SolvdTestProject - headerButtonsTest] STARTED at [05:03:54 2024-02-08]
+[2024-02-08 08:03:54] [1] [INFO] Starting driver session...
+[2024-02-08 08:03:57] [1] [INFO] Driver session started.
+[2024-02-08 08:03:57] [1] [INFO] INFO: opening url 'https://www.solvd.com/'
+[2024-02-08 08:03:59] [1] [INFO] PASS: element 'casesButton' is clicked.
+[2024-02-08 08:04:01] [1] [INFO] PASS: element 'goToPageTwoButton' is clicked.
+[2024-02-08 08:04:02] [1] [INFO] TEST [SolvdTestProject - headerButtonsTest] PASSED at [05:04:02 2024-02-08]
