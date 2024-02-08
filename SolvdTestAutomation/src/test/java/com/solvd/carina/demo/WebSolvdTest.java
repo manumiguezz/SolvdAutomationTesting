@@ -1,16 +1,32 @@
 package com.solvd.carina.demo;
 
 import com.solvd.carina.demo.gui.solvd.components.HeaderNavigatorBar;
+import com.solvd.carina.demo.gui.solvd.pages.BlogPage;
 import com.solvd.carina.demo.gui.solvd.pages.CasesPage;
 import com.solvd.carina.demo.gui.solvd.pages.ContactUsPage;
 import com.solvd.carina.demo.gui.solvd.pages.HomePage;
 import com.zebrunner.carina.core.IAbstractTest;
+import com.zebrunner.carina.core.registrar.ownership.MethodOwner;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class WebSolvdTest implements IAbstractTest {
 
+    @Test(dataProvider = "SearchBlogData")
+    @MethodOwner(owner = "manumiguezz")
+    public void BlogPageTest(String searchText){
+        HomePage homePage = new HomePage(getDriver());
+        BlogPage blogPage = new BlogPage(getDriver());
+        HeaderNavigatorBar headerNavigatorBar = homePage.getHeaderNavigatorBar();
+
+        homePage.open();
+
+        headerNavigatorBar.clickBlogButton();
+        blogPage.typeSearchText(searchText);
+    }
+
     @Test
+    @MethodOwner(owner = "manumiguezz")
     public void CasesPageTest(){
         HomePage homePage = new HomePage(getDriver());
         CasesPage casesPage = new CasesPage(getDriver());
@@ -23,6 +39,7 @@ public class WebSolvdTest implements IAbstractTest {
     }
 
     @Test(dataProvider = "ContactUsData")
+    @MethodOwner(owner = "manumiguezz")
     public void contactUsPageTest(String fullName, String email, String phone, String message) {
         HomePage homePage = new HomePage(getDriver());
         ContactUsPage contactUsPage = new ContactUsPage(getDriver());
@@ -52,7 +69,7 @@ public class WebSolvdTest implements IAbstractTest {
         };
     }
 
-    @DataProvider(name = "searchBlogData")
+    @DataProvider(name = "SearchBlogData")
     public Object[][] searchBlogDataProvider() {
         return new Object[][] {
                 {"QA"},
