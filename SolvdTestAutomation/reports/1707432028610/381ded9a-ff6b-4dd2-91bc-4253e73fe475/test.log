@@ -1,6 +1,6 @@
-[2024-02-08 02:01:39] [1] [WARN] Reporting disabled: using no op test run registrar
-[2024-02-08 02:01:39] [1] [INFO] TEST [SolvdTestProject - putProductTest] STARTED at [23:01:39 2024-02-07]
-[2024-02-08 02:01:42] [1] [INFO] Request method:	PUT
+[2024-02-08 10:40:33] [1] [WARN] Reporting disabled: using no op test run registrar
+[2024-02-08 10:40:33] [1] [INFO] TEST [SolvdTestProject - putProductTest] STARTED at [19:40:33 2024-02-08]
+[2024-02-08 10:40:36] [1] [INFO] Request method:	PUT
 Request URI:	https://dummyjson.com/products/1
 Request params:	<none>
 Query params:	<none>
@@ -24,8 +24,8 @@ x-content-type-options: nosniff
 x-xss-protection: 1; mode=block
 x-ratelimit-limit: 100
 x-ratelimit-remaining: 99
-date: Thu, 08 Feb 2024 02:01:42 GMT
-x-ratelimit-reset: 1707357705
+date: Thu, 08 Feb 2024 22:40:37 GMT
+x-ratelimit-reset: 1707432040
 content-type: application/json; charset=utf-8
 content-length: 508
 etag: W/"1fc-Hd/Z+YhMmS1Z/NvWC7M2y6jwAIg"
@@ -51,21 +51,15 @@ server: railway
     "category": "smartphones"
 }
 
-[2024-02-08 02:01:42] [1] [ERROR] TEST [SolvdTestProject - putProductTest] FAILED at [23:01:42 2024-02-07] - id
-Value type 'Integer' doesn't match to expected type 'String'
- ; images
-Value type 'JSONArray' doesn't match to expected type 'array'
- ; price
-Value type 'Integer' doesn't match to expected type 'String'
- ; rating
-Value type 'Double' doesn't match to expected type 'double'
+[2024-02-08 10:40:36] [1] [INFO] JSON schema of version below or equal to draft-04 was detected
+[2024-02-08 10:40:36] [1] [ERROR] TEST [SolvdTestProject - putProductTest] FAILED at [19:40:36 2024-02-08] - Validation against Json schema failed: 
+[]: object has missing required properties (["discountPercentage"])
 
 
-org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:482)
-org.skyscreamer.jsonassert.JSONAssert.assertEquals(JSONAssert.java:464)
-com.zebrunner.carina.api.AbstractApiMethodV2.validateResponse(AbstractApiMethodV2.java:339)
-com.zebrunner.carina.api.AbstractApiMethodV2.validateResponse(AbstractApiMethodV2.java:299)
-com.solvd.carina.demo.ProductTest.putProductTest(ProductTest.java:48)
+com.zebrunner.carina.api.apitools.validation.JsonValidator.validateJsonAgainstSchemaV3V4(JsonValidator.java:121)
+com.zebrunner.carina.api.apitools.validation.JsonValidator.validateJsonAgainstSchema(JsonValidator.java:67)
+com.zebrunner.carina.api.AbstractApiMethodV2.validateResponseAgainstSchema(AbstractApiMethodV2.java:388)
+com.solvd.carina.demo.ProductTest.putProductTest(ProductTest.java:49)
 java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 java.base/java.lang.reflect.Method.invoke(Method.java:580)
 org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)

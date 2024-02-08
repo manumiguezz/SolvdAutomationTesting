@@ -46,7 +46,7 @@ public class ProductTest implements IAbstractTest {
         api.setId(1);
         api.callAPIExpectSuccess();
         api.validateResponse(JSONCompareMode.STRICT_ORDER);
-        api.validateResponseAgainstSchema("api/products/_put/rs.json");
+        api.validateResponseAgainstSchema("api/products/_put/rs.schema");
     }
 
 }
