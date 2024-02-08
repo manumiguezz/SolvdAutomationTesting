@@ -3,12 +3,13 @@ package com.solvd.carina.demo;
 import com.solvd.carina.demo.gui.solvd.pages.ContactUsPage;
 import com.solvd.carina.demo.gui.solvd.pages.HomePage;
 import com.zebrunner.carina.core.IAbstractTest;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class WebSolvdTest implements IAbstractTest {
 
-    @Test
-    public void contactUsTest() {
+    @Test(dataProvider = "ContactUsData")
+    public void contactUsTest(String fullName, String email, String phone, String message) {
         HomePage homePage = new HomePage(getDriver());
         ContactUsPage contactUsPage = new ContactUsPage(getDriver());
 
@@ -16,14 +17,22 @@ public class WebSolvdTest implements IAbstractTest {
         homePage.clickContactUsButton();
 
         contactUsPage.clickGetInTouchWithUsButton();
-        contactUsPage.typeFullName("Manuel Miguez");
-        contactUsPage.typeEmail("manu@gmail.com");
-        contactUsPage.typePhone("+54 11987654321");
-        contactUsPage.typeMessage("I want to talk to Ivan");
+        contactUsPage.typeFullName(fullName);
+        contactUsPage.typeEmail(email);
+        contactUsPage.typePhone(phone);
+        contactUsPage.typeMessage(message);
         contactUsPage.clickPrivacyPolicyCheckBox();
 //        commented part of test to not send anything
 //        contactUsPage.clickSendFormButton();
 
+    }
 
+    @DataProvider(name = "ContactUsData")
+    public Object[][] dataProvider() {
+        return new Object[][] {
+                {"Manu", "manu@gmail.com", "114121431", "I want to talk to Ivan"},
+                {"Ivan", "ivan@gmail.com", "413987874", "I want to talk to Manu"},
+                {"Carlos", "carlos@gmail.com", "513213456", "I want to help solve"}
+        };
     }
 }
